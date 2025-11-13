@@ -6,7 +6,7 @@
 
 **A classic Snake game built with vanilla JavaScript**
 
-[Play Now](#getting-started) • [Features](#features) • [Controls](#controls)
+<a href="https://piyushrepos.github.io/snake-game/" target="_blank">Play Now</a> • [Features](#✨-features) • [Controls](#🎮-controls)
 
 </div>
 
@@ -22,10 +22,12 @@ A fast, responsive Snake game implementation using pure vanilla JavaScript, HTML
 - 🏆 **High Score Tracking** - Persistent high scores saved in local storage
 - ⏱️ **Timer** - Track how long you've been playing
 - 🌓 **Theme Switcher** - Toggle between light and dark modes
+- 🎚️ **Speed Control** - Dynamically adjust game speed during gameplay
 - 📱 **Responsive Design** - Works on desktop and mobile devices
 - ⚡ **Vanilla JavaScript** - No frameworks or external dependencies
 - 💾 **Local Storage** - Saves high score and theme preferences
 - 🎯 **Wrapping Borders** - Snake wraps around screen edges
+- 👀 **Visual Snake Head** - Distinct head styling for better visibility
 
 ## 🎮 Controls
 
@@ -37,6 +39,8 @@ A fast, responsive Snake game implementation using pure vanilla JavaScript, HTML
 | **Arrow Right** ➡️     | Move Right              |
 | **Start/Pause Button** | Start or pause the game |
 | **Restart Button**     | Restart the game        |
+| **Speed Up Button**    | Increase game speed     |
+| **Speed Down Button**  | Decrease game speed     |
 | **Theme Button**       | Toggle light/dark mode  |
 
 ## 🚀 Getting Started
@@ -51,7 +55,7 @@ A fast, responsive Snake game implementation using pure vanilla JavaScript, HTML
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/snake-game.git
+   git clone https://github.com/PiyushRepos/snake-game.git
    ```
 
 2. **Navigate to the project directory**
@@ -80,11 +84,14 @@ A fast, responsive Snake game implementation using pure vanilla JavaScript, HTML
 ```
 snake-game/
 │
-├── index.html          # Main HTML file
-├── script.js           # Game logic and functionality
-├── styles.css          # Styling and themes
-├── default-og.png      # Open Graph image
-└── README.md           # Project documentation
+├── assets/
+│   ├── snake-game-banner.svg   # README banner image
+│   ├── default-og.png          # Open Graph image
+│   └── light-mode.png          # Screenshot (if available)
+├── index.html                  # Main HTML file
+├── script.js                   # Game logic and functionality
+├── styles.css                  # Styling and themes
+└── README.md                   # Project documentation
 ```
 
 ## 🎯 How to Play
@@ -121,11 +128,15 @@ snake-game/
 
 ### Changing Game Speed
 
-Edit the `SPEED` constant in `script.js`:
+You can now adjust the game speed in real-time using the **Speed Up** and **Speed Down** buttons during gameplay!
+
+Alternatively, edit the initial `SPEED` variable in `script.js`:
 
 ```javascript
-const SPEED = 150; // milliseconds (lower = faster)
+let SPEED = 150; // milliseconds (lower = faster)
 ```
+
+**Speed Range:** 50ms (fastest) to 500ms (slowest)
 
 ### Changing Block Size
 
@@ -149,6 +160,13 @@ Extend the CSS variables in the `.dark` class or create new theme classes in `st
 - Persists across browser sessions
 - Updates in real-time when you beat your record
 
+### Dynamic Speed Control
+
+- Adjust game speed on-the-fly with Speed Up/Down buttons
+- Speed range from 50ms (blazing fast) to 500ms (beginner-friendly)
+- Changes take effect immediately during active gameplay
+- Great for progressive difficulty or accessibility needs
+
 ### Theme Support
 
 - Light mode (default) with bright, clean aesthetics
@@ -161,6 +179,7 @@ Extend the CSS variables in the `.dark` class or create new theme classes in `st
 - Adapts to different screen sizes
 - Touch-friendly on mobile devices
 - Flexible grid layout adjusts to available space
+- Visual distinction between snake head and body segments
 
 ## 📊 Browser Compatibility
 
@@ -186,9 +205,10 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 👨‍💻 Author
 
-**Your Name**
+**Piyush Kumar**
 
-- GitHub: [@yourusername](https://github.com/yourusername)
+- GitHub: [@PiyushRepos](https://github.com/PiyushRepos)
+- Repository: [snake-game](https://github.com/PiyushRepos/snake-game)
 
 ## 🙏 Acknowledgments
 
