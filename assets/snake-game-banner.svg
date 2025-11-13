@@ -1,0 +1,52 @@
+<svg width="1200" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="400" fill="#121212"/>
+  
+  <!-- Grid pattern -->
+  <defs>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <rect width="30" height="30" fill="none" stroke="#333" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="400" fill="url(#grid)"/>
+  
+  <!-- Snake body -->
+  <rect x="320" y="180" width="28" height="28" rx="8" fill="#00ff00"/>
+  <rect x="350" y="180" width="28" height="28" rx="8" fill="#00ff00"/>
+  <rect x="380" y="180" width="28" height="28" rx="8" fill="#00ff00"/>
+  <rect x="410" y="180" width="28" height="28" rx="8" fill="#00ff00"/>
+  <rect x="440" y="180" width="28" height="28" rx="8" fill="#00ff00"/>
+  <rect x="470" y="180" width="28" height="28" rx="8" fill="#00ff00"/>
+  <rect x="500" y="180" width="28" height="28" rx="8" fill="#00ff00"/>
+  <rect x="530" y="180" width="28" height="28" rx="8" fill="#00ff00"/>
+  <rect x="560" y="180" width="28" height="28" rx="8" fill="#00ff00"/>
+  <rect x="590" y="180" width="28" height="28" rx="8" fill="#00ff00"/>
+  <rect x="620" y="180" width="28" height="28" rx="8" fill="#00ff00"/>
+  <rect x="650" y="180" width="28" height="28" rx="8" fill="#00ff00"/>
+  
+  <!-- Snake head with eyes -->
+  <rect x="680" y="180" width="28" height="28" rx="8" fill="#00ff00"/>
+  <circle cx="686" cy="190" r="2" fill="#121212"/>
+  <circle cx="702" cy="190" r="2" fill="#121212"/>
+  
+  <!-- Apple/Food -->
+  <text x="750" y="205" font-size="24">🍎</text>
+  
+  <!-- Title -->
+  <text x="600" y="100" font-family="monospace" font-size="72" font-weight="bold" fill="#f0f0f0" text-anchor="middle">
+    🐍 SNAKE GAME
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="310" font-family="monospace" font-size="24" fill="#999" text-anchor="middle">
+    Classic Arcade Game • Vanilla JavaScript • No Dependencies
+  </text>
+  
+  <!-- Decorative score -->
+  <text x="100" y="80" font-family="monospace" font-size="20" fill="#666">
+    SCORE: 12
+  </text>
+  <text x="1000" y="80" font-family="monospace" font-size="20" fill="#666">
+    HIGH: 248
+  </text>
+</svg>

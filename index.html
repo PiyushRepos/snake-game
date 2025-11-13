@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game — Play the classic Snake in your browser</title>
+    <meta
+      name="description"
+      content="Play a fast, responsive Snake game built with vanilla JavaScript. Challenge yourself, track high scores, and switch themes."
+    />
+    <meta
+      name="keywords"
+      content="snake, snake game, javascript game, vanilla js, browser game, arcade"
+    />
+    <meta name="author" content="Your Name or Site Name" />
+    <link rel="canonical" href="https://example.com/" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:site_name" content="Snake Game" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Snake Game — Play the classic Snake in your browser"
+    />
+    <meta
+      property="og:description"
+      content="Play a fast, responsive Snake game built with vanilla JavaScript. Challenge yourself, track high scores, and switch themes."
+    />
+    <meta property="og:image" content="./default-og.png" id="og-image-meta" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Snake Game — Play the classic Snake in your browser"
+    />
+    <meta
+      name="twitter:description"
+      content="Play a fast, responsive Snake game built with vanilla JavaScript."
+    />
+    <meta name="twitter:image" content="./default-og.png" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <section class="infos">
+        <div class="info time">
+          <h3>Time: 00:00:00</h3>
+        </div>
+        <div class="info high-score">
+          <h3>High Score: 0</h3>
+        </div>
+        <div class="info score">
+          <h3>Score: 0</h3>
+        </div>
+        <div>
+          <button class="info toggleTheme">Dark</button>
+        </div>
+      </section>
+      <section class="board"></section>
+      <section class="controls">
+        <button class="btn btn-startPause">Start</button>
+        <div class="btn-container">
+          <button class="btn btn-restart">Restart</button>
+          <button class="btn btn-speed" data-speed="up">Speed Up</button>
+          <button class="btn btn-speed" data-speed="down">Speed Down</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
